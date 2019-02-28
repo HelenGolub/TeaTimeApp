@@ -37,12 +37,12 @@ class MainViewController: UIViewController {
     
     // MARK: - Utils
     
-    private func setupRandomVaseImage() {
+    func setupRandomVaseImage() {
         vaseIndex = Int(arc4random_uniform(7))
         vaseImageView.image = UIImage(named: vasesArray[vaseIndex])
     }
     
-    private func setImagesForButtons(arrayName: [String]) {
+    func setImagesForButtons(arrayName: [String]) {
         
         //        MARK: - Generate random array
         var arrayNameCopy = arrayName
